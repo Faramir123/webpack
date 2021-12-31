@@ -2,7 +2,7 @@ import { printError, printResult, printTimerTick, printTimerResult, printErrorTi
 import getDateDiff from './getDateDiff.js'
 import getTimer from './startDate.js'
 import toggle from './toggle.js';
-/* import {Howl} from  'https://github.com/goldfire/howler.js.git' */
+/* import {Howl} from '../howler' */
 
 const form = document.getElementById('datecalc');
 const timer = document.getElementById('timerEvent');
@@ -40,10 +40,10 @@ timer.onsubmit = (event) => {
                   else {
                       clearTimeout(startTimer);
                       printTimerResult();
-                   /*    var sound = new Howl({
+                 /*      var sound = new Howl({
                         src: ['../assets/jamaican-piano_mytjcqbd.mp3']
                       });
-                        sound.play();  */                     
+                        sound.play() */;                      
                   }
               },1000)
           }
